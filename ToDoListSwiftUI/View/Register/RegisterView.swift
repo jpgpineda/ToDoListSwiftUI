@@ -9,7 +9,7 @@ import SwiftUI
 
 struct RegisterView: View {
     @StateObject var viewModel = RegisterViewModel()
-    
+    @Environment(\.presentationMode) var presentationMode: Binding<PresentationMode>
     var body: some View {
         HeaderView(title: "Register",
                    subTitle: "Get Things Done",
@@ -28,7 +28,7 @@ struct RegisterView: View {
             TextField("User Name", text: $viewModel.userName)
             ToDoListButton(title: "Register",
                            background: .orange) {
-                viewModel.requestRegister()
+                presentationMode.wrappedValue.dismiss()
             }
         }
         .offset(y: -50)

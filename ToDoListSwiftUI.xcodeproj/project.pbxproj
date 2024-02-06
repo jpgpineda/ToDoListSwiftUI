@@ -51,6 +51,7 @@
 		08EF9BE52B6C094000580AD9 /* Encodable+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08EF9BE42B6C094000580AD9 /* Encodable+Ext.swift */; };
 		08EF9BE82B6C0BEA00580AD9 /* MainViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08EF9BE72B6C0BEA00580AD9 /* MainViewModel.swift */; };
 		08EF9BEB2B6C0D9F00580AD9 /* LoadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08EF9BEA2B6C0D9F00580AD9 /* LoadingView.swift */; };
+		08EF9BEF2B6D47B600580AD9 /* TaskItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08EF9BEE2B6D47B600580AD9 /* TaskItem.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -80,6 +81,7 @@
 		08EF9BE42B6C094000580AD9 /* Encodable+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Encodable+Ext.swift"; sourceTree = "<group>"; };
 		08EF9BE72B6C0BEA00580AD9 /* MainViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewModel.swift; sourceTree = "<group>"; };
 		08EF9BEA2B6C0D9F00580AD9 /* LoadingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingView.swift; sourceTree = "<group>"; };
+		08EF9BEE2B6D47B600580AD9 /* TaskItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskItem.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -178,6 +180,7 @@
 			isa = PBXGroup;
 			children = (
 				08EF9BE22B6C084700580AD9 /* AppUser.swift */,
+				08EF9BEE2B6D47B600580AD9 /* TaskItem.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -375,6 +378,7 @@
 				08EF9BA42B6BF0BB00580AD9 /* ToDoListView.swift in Sources */,
 				08EF9BA62B6BF13D00580AD9 /* ProfileViewModel.swift in Sources */,
 				08EF9BB52B6BFB6700580AD9 /* ToDoListButton.swift in Sources */,
+				08EF9BEF2B6D47B600580AD9 /* TaskItem.swift in Sources */,
 				08EF9BE52B6C094000580AD9 /* Encodable+Ext.swift in Sources */,
 				08EF9B8E2B6BEDE800580AD9 /* AppDelegate.swift in Sources */,
 				08EF9B822B6BEDAD00580AD9 /* MainView.swift in Sources */,

@@ -21,16 +21,12 @@ class LoginViewModel: ObservableObject {
     func requestLogin() {
         guard validate() else { return }
         isLoading = true
-        Auth.auth().signIn(withEmail: email,
-                           password: password) { [weak self] _, error in
-            if let error = error {
-                DispatchQueue.main.asyncAfter(deadline: .now() + 4) {
+        DispatchQueue.main.asyncAfter(deadline: .now() + 4) {
+            Auth.auth().signIn(withEmail: self.email,
+                               password: self.password) { [weak self] _, error in
+                self?.isLoading = false
+                if let error = error {
                     self?.error = error.localizedDescription
-                    self?.isLoading = false
-                }
-            } else {
-                DispatchQueue.main.asyncAfter(deadline: .now() + 4) {
-                    self?.isLoading = false
                 }
             }
         }
